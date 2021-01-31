@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style:none;
+}
+#row{
+width: 50%;
+height: 100vh;
+display: flex;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+}
+#row h1{
+    font-size: 35px;
+    margin: 0 15px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;
+}
+#row h1::before{
+    content: ':';
+    position: absolute;
+    left: 40px;
+    top: -2px;
+}
+#row h1:last-child:before{
+    display: none;
+}
